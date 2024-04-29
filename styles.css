@@ -50,7 +50,8 @@ input{
     border: 1px solid #7c7e86;
     background: transparent;
     width: 26rem;
-    padding: 1rem 1.45rem;
+    padding: 2rem 1.45rem;
+    height: 2.7rem;
     transition: all 0.3s ease-in-out;
     border-radius: 3px;
     color: white;
@@ -67,7 +68,6 @@ input:hover{
     padding: 0.4rem;
     border: none;
     border-radius: 10px;
-    width: 26rem;
     font-weight: 700;
     font-size: 20px;
     margin-top: 10px;
@@ -90,9 +90,19 @@ input:hover{
     align-items: center;
     gap: 10px;
 }
+
+.dropdown-menu {
+    display: none;
+}
+
+/* Show the dropdown when the "show" class is present */
+.dropdown-menu.show {
+    display: block;
+}
 #Слой_1{
     width: 2rem;
 }
+
 button{
     background: #474D57;
 }
@@ -108,14 +118,7 @@ button:hover{
     text-decoration: underline;
     cursor: pointer;
 }
-@media (min-width: 800px) {
-    .line-container{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        width: 27rem;
-    }
-  }
+
 
   .css-1w9d35c {
     display: flex;
